@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Ícones do Icons8 -->
+  <link href="https://cdn-icons-png.flaticon.com/512/1497/1497762.png" rel="icon" type="image/x-icon">
+</head>
+<body id="topo"> <!-- Adicionado o id="topo" -->
+
+  <!-- Modal de Boas-vindas -->
+  <div class="modal fade" id="boasVindasModal" tabindex="-1" aria-labelledby="boasVindasModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="boasVindasModalLabel">Bem-vindo à nossa Página!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Estamos felizes em ter você aqui! Vamos começar a jornada juntos para transformar seu projeto digital.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">MinhaMarca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#topo">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Transforme sua ideia em realidade</h1>
+      <p class="lead">Oferecemos soluções modernas e eficientes para seu projeto.</p>
+      <a href="contato.html" class="btn btn-success btn-lg mt-3">Entrar em Contato</a>
+    </div>
+  </header>
+
+  <!-- Seções da página -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Quem Somos</h2>
+      <p class="text-center">Somos uma equipe apaixonada por tecnologia, com foco em desenvolver experiências digitais de alto impacto para empresas e pessoas. Trabalhamos com inovação, eficiência e excelência.</p>
+    </div>
+  </section>
+
+  <section id="vantagens" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Por que nos escolher?</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2-d0l3CIlKAmZIWGMeXcDIUBfBldMBHJtg&s" alt="Segurança" class="img-fluid mb-3" />
+          <h5>Segurança</h5>
+          <p>Garantimos segurança de ponta a ponta em todos os processos.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsi3_5Zd8_135_Y176CGHA0XPkjWmEMtWupQ&s" alt="Agilidade" class="img-fluid mb-3" />
+          <h5>Agilidade</h5>
+          <p>Entrega rápida com alta qualidade e comprometimento.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoDArDq6206R8CumoWZkpieY5JOFwmYgFjA&s" alt="Inovação" class="img-fluid mb-3" />
+          <h5>Inovação</h5>
+          <p>Utilizamos tecnologias modernas para soluções criativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Profissionais incríveis, me ajudaram a alavancar meu negócio digital."</p>
+            <footer class="blockquote-footer mt-2">João Silva</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Atendimento rápido e serviço impecável. Recomendo!"</p>
+            <footer class="blockquote-footer mt-2">Maria Oliveira</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 - Desenvolvido por Seu Nome</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="#" class="text-white"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="scrollToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 mb-4 me-4" style="display:none;">
+    <i class="bi bi-arrow-up-circle"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
